@@ -2,6 +2,7 @@ import os
 import discord
 from discord.ext import commands
 from colorama import Fore, Style, init
+
 import config
 
 TOKEN = config.TOKEN

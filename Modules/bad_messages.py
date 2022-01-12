@@ -1,8 +1,9 @@
+from Utils.alerter import send
+from Utils.urlShortener import short
+
 from discord.ext import commands
 
 import config
-from Utils.alerter import send
-from Utils.urlShortener import short
 
 
 async def make_it_normal(text):

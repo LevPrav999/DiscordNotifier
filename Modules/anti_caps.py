@@ -1,9 +1,10 @@
+from Utils.alerter import send
+from Utils.urlShortener import short
+
 import discord
 from discord.ext import commands
 
 import config
-from Utils.alerter import send
-from Utils.urlShortener import short
 
 
 class AntiCaps(commands.Cog):
@@ -31,6 +32,7 @@ class AntiCaps(commands.Cog):
             return
         if message.channel.id in config.ALLOWED_CHANNELS_IDS:
             return
+
         count = 0
         if self.type == 1:
             for word in message.content.split(" "):

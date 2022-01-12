@@ -1,8 +1,9 @@
+from Utils.alerter import send
+
 import discord
 from discord.ext import commands, tasks
 
 import config
-from Utils.alerter import send
 
 
 class AntiSpam(commands.Cog):
